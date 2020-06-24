@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <script src="https://use.fontawesome.com/82bf9e2aff.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+  </head>
+<!-- Renderer process logic -->
+
+ 
+ 
+
+  
+  <body style="user-select: none;" class="content">
+    <script>
+      // 1. Require the installed module
+      const customTitlebar = require('custom-electron-titlebar');
+
+      // 2. Create the custom titlebar with your own settings
+      //    To make it work, we just need to provide the backgroundColor property
+      //    Other properties are optional.
+      let MyTitleBar = new customTitlebar.Titlebar({
+        backgroundColor: customTitlebar.Color.fromHex('#2A2C2E'),
+        shadow: true,
+        icon: './images/icon-01.svg'
+      });
+
+      // 3. Update Titlebar text
+      MyTitleBar.updateTitle('Royal Capture');
+    </script>
+  
+    <link rel="stylesheet" href="full.css" />
+    <link rel="stylesheet" href="index.css" />
+    <script defer src="render.js"></script>
+    <div class="row">
+  
+  
+
+      
+
+
+  <style>
+    .blink-image {
+      z-index: 2000; 
+      position: absolute;
+      top: 60px; 
+      right: 175px; 
+      width: 71%; 
+      height: 75%;
+    }
+    .iss {
+      z-index: 2000; 
+      position: absolute;
+      top: 60px; 
+      right: 175px; 
+      width: 71%; 
+      height: 75%;
+    }
+  </style>
+
+  <script>
+    $(document).ready(function () {
+      // Set div display to none
+      $(".startBtn").click(function () {
+        $("#myDiv").css("display", "none");
+      });
+
+      // Set div display to block
+      $(".startBtn").click(function () {
+        $("#myDiv").css("display", "block");
+      });
+    });
+  </script>
+      <video style="width: 1080;"  id="preview"></video>
+      <div id="myDiv">
+      <img class="blink-image" src="./images/5-05.png">
+
+      <style>
+        .man{
+           
+          position: absolute;
+          top: 60px; 
+          right: 910px; 
+          width: 35%; 
+          height: 70%;
+        }
+      </style>
+      <img class="man" src="./images/man-06.svg">
+      </div>
+        
+
+          
+<div class="container text-center">
+
+
+      <br><br>
+      <!-- <button id="popup" style="position: absolute; top: 650px;" class="glow-on-hover">About</button> -->
+      <button id="startBtn" style="position: absolute; right: 750px; top: 620px;"  class="glow-on-hover" type="button">Start</button>
+
+      <button style="position: absolute; right: 500px; top: 620px;" id="stopBtn" class="glow-on-hover">Stop</button>
+      
+        
+          
+          <button style="position: absolute; right: 250px; top: 620px;" id="videoSelectBtn" class="glow-on-hover">
+            Choose a Video Source
+          </button>
+
+        
+        
+      
+    
+
+     
+</div>    
+<br />
+
+<footer id="sticky-footer" class="py-4 bg-blue text-white-50">
+      <div
+        id="price-container"
+        style="
+          width: 10em;
+          height: 2em;
+          position: fixed;
+          bottom: 3.5em;
+          left: 25px;
+          opacity: 0.8;
+        "
+      >
+        <br />
+        <br>
+        <p class="p.ex1">
+           From CITD
+        </p>
+
+      </div>
+    </div>
+</footer>
+    <script src="popup.js"></script>
+  </body>
+</html>

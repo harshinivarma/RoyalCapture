@@ -1,0 +1,81 @@
+<html lang="en" class="nytapp-vi-interactive">
+<link rel="stylesheet" type="text/css" href="https://coronastatistics.live/styles.686c8d0ee0d1c4b85c46.css" />
+<title>About RC</title>
+
+<body style="user-select: none;">
+
+<div class="modal-body text-center pt-4 ng-tns-c13-0" _ngcontent-cxj-c13="">
+    <div class="modal-step ng-tns-c13-0 ng-trigger ng-trigger-fadeInOutAnimation ng-star-inserted"
+        _ngcontent-cxj-c13=""><style>
+        .static {
+  position:absolute;
+  
+}
+
+.static:hover {
+  opacity:0;
+}</style>
+        <img class="ng-tns-c13-0 static" width="160" src="./images/icon-01.svg" _ngcontent-cxj-c13="">
+        <img class="active" width="160" src="./images/RC.gif">
+        <!-- <img width="125" class="ng-tns-c13-0" src="./images/icon-01.svg"
+            _ngcontent-cxj-c13=""> -->
+        <h5 class="text-white mt-3 ng-tns-c13-0" _ngcontent-cxj-c13="">Royal <span class="text-blue ng-tns-c13-0"
+                _ngcontent-cxj-c13="">Capture</span></h5>
+                <p id="version"></p>
+  <script>
+    const { ipcRenderer } = require('electron');
+    const version = document.getElementById('version');
+    
+    ipcRenderer.send('app_version');
+    ipcRenderer.on('app_version', (event, arg) => {
+      ipcRenderer.removeAllListeners('app_version');
+      version.innerText = 'Version ' + arg.version;
+    });
+  </script>
+        <p class="ng-tns-c13-0" _ngcontent-cxj-c13="">Royal Capture is a free open source video recording software
+            <strong><span class="text-danger">From CITD.</span></strong> </p>
+        <p class="text-blue ng-tns-c13-0" _ngcontent-cxj-c13="">Developed by 
+            <strong><span class="text-danger">Chandra Sekhar Malla</span></strong> </p>
+        <!-- <p class="text-blue ng-tns-c13-0" _ngcontent-cxj-c13="">App Version 
+            <strong><span class="text-danger">1.0.0</span></strong> </p> -->
+        <style>
+.progress {
+  background: rgba(255,255,255,0.1);
+  justify-content: flex-start;
+  border-radius: 100px;
+  align-items: center;
+  position: relative;
+  padding: 0 5px;
+  display: flex;
+  height: 20px;
+  width: 500px;
+}
+
+.progress-value {
+  animation: load 15s normal forwards;
+  box-shadow: 0 10px 40px -10px #fff;
+  border-radius: 100px;
+  background: #fff;
+  height: 10px;
+  width: 0;
+}
+
+@keyframes load {
+  0% { width: 0; }
+  100% { width: 100%; }
+}
+</style>
+<div class="progress">
+  <div class="progress-value"></div>
+</div>
+
+         
+           
+    </div>
+
+</div>
+
+
+
+</body>
+</html>
