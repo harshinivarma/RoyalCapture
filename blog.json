@@ -1,0 +1,14 @@
+{
+  "country" : "IN",
+  "last_update" : "2020-10-04T08:23:45",
+  "cases" : 6549373,
+  "deaths" : 101782,
+  "recovered" : 5509966
+},
+{
+  "country" : "US",
+  "last_update" : "2020-10-04T08:23:45",
+  "cases" : 6549373,
+  "deaths" : 101782,
+  "recovered" : 5509966
+}
