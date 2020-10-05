@@ -1,19 +1,28 @@
 {
    "Countries":[
-              {
-         "Country":"Afghanistan",
-         "CountryCode":"AF",
-         "Slug":"afghanistan",
-         "NewConfirmed":44,
-         "TotalConfirmed":39341,
-         "NewDeaths":0,
-         "TotalDeaths":1462,
-         "NewRecovered":10,
-         "TotalRecovered":32852,
-         "Date":"2020-10-05T07:55:37Z",
-         "Premium":{
-            
-         }
-      },
-   ]
+                  {
+                     "Country":"Afghanistan",
+                     "CountryCode":"AF",
+                     "Slug":"afghanistan",
+                     "NewConfirmed":44,
+                     "TotalConfirmed":39341,
+                     "NewDeaths":0,
+                     "TotalDeaths":1462,
+                     "NewRecovered":10,
+                     "TotalRecovered":32852,
+                     "Date":"2020-10-05T07:55:37Z",
+                  },
+                  {
+                     "Country":"Afghanistan",
+                     "CountryCode":"AF",
+                     "Slug":"afghanistan",
+                     "NewConfirmed":44,
+                     "TotalConfirmed":39341,
+                     "NewDeaths":0,
+                     "TotalDeaths":1462,
+                     "NewRecovered":10,
+                     "TotalRecovered":32852,
+                     "Date":"2020-10-05T07:55:37Z",
+                  },
+            ]
 }
